@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victorio reloj</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <!--Box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <nav class="nav">
+      <div>
+        <img class="img-logo" src="./asset/logo-reloj.png" alt="inicio">
+      </div>
+      <div class="ul-container">
+          <ul class="todu-list">
+            <ul class="nav__list">
+              <span>
+                <i class="bx bxs-watch"></i>
+              </span>
+              <div class="carrito__icon">
+                <i class="bx bx-cart"></i>
+                <span class="item__total">0</span>
+              </div>
+            </ul>
+          </ul>
+        </div>
+        <button class="ham" type="button-ham">
+            <span class="br-1"></span>
+            <span class="br-2"></span>
+            <span class="br-3"></span>
+        </button>
+  </nav>
+    <!--Navegation-->
+    <!-- <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<img src="./asset/logo-reloj.png" alt="">
+				</div>
+				<ul class="nav__list">
+					<span>
+						<i class="bx bxs-watch"></i>
+					</span>
+					<div class="carrito__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
+      </div>
+      <button class="ham" type="button-ham">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+    </button>
+    </nav> -->
+
+    <!--Filter-->
+    <section class="filter">
+      <div class="grid">
+        <div class="div">
+          <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+          <input type="text" id="buscar" placeholder="Buscar relojes...">
+        </div>
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">Marcas</option>
+            <option value="rolex">Rolex</option>
+            <option value="omega">Omega</option>
+            <option value="audemars">Audemars</option>
+            <option value="rolexDay">Rolex Day</option>
+            <option value="hublot">Hublot</option>
+            <option value="tag">Tag Heuer</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!--Productos-->
+    <section class="productos">
+      <div class="productos__center">
+        <!-- <div class="producto">
+          <div class="image__container">
+            <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="">
+          </div>
+          <div class="producto__footer">
+            <h1>Rejoles Originales</h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$102.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!--Carrito-->
+    
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+
+          <!-- <div class="carrito__item">
+            <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="reloj">
+            <div>
+              <h3>Relojes Originales </h3>
+              <p class="price">$122</p>
+            </div>
+            <div>
+              <span>
+                <i class="bx bxs-up-arrow"></i>
+              </span>
+              <p>1</p>
+              <span>
+                <i class="bx bxs-down-arrow"></i>
+              </span>
+            </div>
+            <div>
+              <span class="remove__item">
+                <i class="bx bx-trash"></i>
+              </span>
+            </div>
+            
+          </div> -->
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inicio delfooter -->
+    <footer>
+      <div class="footer-container">
+          <div class="footer-content-container">
+              <img src="./asset/logo-reloj.png" alt="">
+              <span class="footer-info">+54 11111111</span>
+              <span class="footer-info">victorio_reloj@gamil.com</span>
+          </div>
+          <div class="footer-menus">
+              <div class="footer-content-container">
+                  <span class="menu-title">Ser parte</span>
+                  <a href="login.html"><button class="btn-login">Registrarme</button></a>
+              </div>
+              <div class="footer-content-container">
+                  <span class="menu-title">Legal</span>
+                  <a href="" class="menu-item-footer">Políticas de privacidad</a>
+                  <a href="" class="menu-item-footer">Cookies</a>
+              </div>
+          </div>
+
+          <div class="footer-content-container">
+              <span class="menu-title">Seguinos en</span>
+              <div class="social-container">
+                  <a href="" class="social-link"></a>
+                  <a href="" class="social-link"></a>
+                  <a href="" class="social-link"></a>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-container">
+          <span class="copyright">Copyright 2022, Gustavo Gonzalez</span>
+      </div>
+  </footer>
+  <!-- Final del footer -->
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="index.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
